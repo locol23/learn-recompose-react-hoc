@@ -1,9 +1,9 @@
 import React from 'react'
 import { compose, setDisplayName, withStateHandlers, nest } from 'recompose'
 
-const Parent = props => <div>{props.children}</div>
+const Parent = props => <React.Fragment>{props.children}</React.Fragment>
 
-const ChildA = props => <div>{props.children}</div>
+const ChildA = props => <React.Fragment>{props.children}</React.Fragment>
 
 const ChildB = props => <div>{props.text}</div>
 
